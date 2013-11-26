@@ -3,3 +3,4 @@
 *.swo
 *.pyc
 *.sqlite3
+bower_components/

@@ -1,9 +1,13 @@
+{% extends 'base.tmpl' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
 <!-- my_form.html -->
 <form method="POST" action="">
     {% csrf_token %}
 
-    {{ LoginForm }}
+    {{ LoginForm|crispy }}
 
-    <input type="submit" value="login" />
-    <!-- rest of form -->
+    <button class="btn btn-primary" value="login" type="submit">Login</button>
 </form>
+{% endblock %}
