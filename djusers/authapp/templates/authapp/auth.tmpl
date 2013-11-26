@@ -1,0 +1,10 @@
+<!-- my_form.html -->
+<form method="POST" action="">
+    {% csrf_token %}
+
+    {{ SignupForm }}
+
+    <input type="submit" value="login" />
+    <input type="hidden" name="title" value="abc">
+    <!-- rest of form -->
+</form>
